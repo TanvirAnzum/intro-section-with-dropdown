@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+* {
+  font-family: "Epilogue", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// variables
+$sm: 1.125em;
+$reg: 1.25em;
+$lg: 3.5em;
+
+//font weight
+$normal: 500;
+$bold: 700;
+
+//colors
+
+$white: hsl(0, 0%, 98%);
+$gray: hsl(0, 0%, 41%);
+$black: hsl(0, 0%, 8%);
+
+// mixins
+
+@mixin font-style($size, $color, $weight) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+}
