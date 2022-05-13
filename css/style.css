@@ -233,6 +233,7 @@ body {
   font-size: var(--fs-reg);
   font-weight: var(--fw-reg);
   width: 70%;
+  color: var(--gray);
 }
 
 .main__content button {
