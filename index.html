@@ -35,7 +35,8 @@
     />
 
     <!-- Own css -->
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
 
   <body>
@@ -52,12 +53,12 @@
         </a>
 
         <div class="navbar__links">
-          <ul>
+          <ul class="navbar__items">
             <li class="dropdown">
-              <a href="#" class="dropdown-text"
+              <a href="#" class="df"
                 >Features <i class="fa-solid fa-caret-down"></i
               ></a>
-              <ul class="dropdown-item">
+              <ul class="dropdown-item df-item">
                 <li>
                   <a href="#"
                     ><img src="./images/icon-todo.svg" alt="" /> To do list</a
@@ -82,8 +83,10 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#">Features <i class="fa-solid fa-caret-down"></i></a>
-              <ul class="dropdown-item">
+              <a href="#" class="cf"
+                >Company <i class="fa-solid fa-caret-down"></i
+              ></a>
+              <ul class="dropdown-item cf-item">
                 <li>
                   <a href="#">History</a>
                 </li>
@@ -95,25 +98,92 @@
                 </li>
               </ul>
             </li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#" class="fs-reg">Career</a></li>
+            <li><a href="#" class="fs-reg">About</a></li>
           </ul>
         </div>
 
         <div class="navbar__buttons">
-          <a href="#">Login</a>
+          <a href="#" class="fs-reg">Login</a>
           <button class="btn">Register</button>
         </div>
       </nav>
     </header>
 
-    <!-- header section ends -->
+    <!-- sidebar starts here -->
+    <div class="sidebar-area">
+      <div class="sidebar">
+        <div class="sidebar__exit">
+          <i class="fa-solid fa-xmark fa-3x"></i>
+        </div>
+
+        <div class="sidebar__links">
+          <ul class="sidebar__items">
+            <li class="sb-dropdown">
+              <a href="#" class="dropdown-feature"
+                >Features <i class="fa-solid fa-caret-down"></i
+              ></a>
+              <ul class="sb-dropdown-item feature-item">
+                <li>
+                  <a href="#"
+                    ><img src="./images/icon-todo.svg" alt="" /> To do list</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./images/icon-calendar.svg" alt="" /> Calendar</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./images/icon-reminders.svg" alt="" />
+                    Reminders</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./images/icon-planning.svg" alt="" /> Planning</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="sb-dropdown">
+              <a href="#" class="dropdown-company"
+                >Company <i class="fa-solid fa-caret-down"></i
+              ></a>
+              <ul class="sb-dropdown-item company-item">
+                <li>
+                  <a href="#">History</a>
+                </li>
+                <li>
+                  <a href="#">Our team</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#" class="fs-reg">Career</a></li>
+            <li><a href="#" class="fs-reg">About</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar__buttons">
+          <a href="#" class="fs-reg">Login</a>
+          <button class="btn">Register</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- sidebar ends -->
+
+    <!-- main section starts -->
 
     <main class="main-area">
       <div class="main">
         <div class="main__content">
           <h1>
-            Make <br />
+            Make <span class="line-break"><br /></span>
             remote work
           </h1>
           <p>
@@ -123,13 +193,10 @@
           <button>Learn More</button>
 
           <div class="main__content-icons">
-            <img src="./images/client-databiz.svg" alt="" /><img
-              src="./images/client-audiophile.svg"
-              alt=""
-            /><img src="./images/client-meet.svg" alt="" /><img
-              src="./images/client-maker.svg"
-              alt=""
-            />
+            <img src="./images/client-databiz.svg" alt="" />
+            <img src="./images/client-audiophile.svg" alt="" />
+            <img src="./images/client-meet.svg" alt="" />
+            <img src="./images/client-maker.svg" alt="" />
           </div>
         </div>
         <div class="main__image">
@@ -146,7 +213,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Tanvir Anzum</a>.
     </div>
   </body>
   <script src="./script.js"></script>
